@@ -28,7 +28,9 @@ class LinkedList {
   }
 
   // O(n)
-  pop(value) {}
+  pop(value) {
+    
+  }
 }
 
 let list = new LinkedList(7);
