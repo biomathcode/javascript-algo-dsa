@@ -6,3 +6,5 @@ Solution 2 would be to keep a memory of each element if it is already present an
 
 
 Problem 2: return a sorted unique array. 
+
+We are trading our space complexity than time complexity
