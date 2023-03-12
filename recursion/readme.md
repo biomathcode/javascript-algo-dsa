@@ -25,3 +25,5 @@ var callMyself = function() {
 };
 
 ```
+
+A good way to get comfortable with recursion is to make loops into recursion and recursion into loops. Basically interconvert Loops into recursion
