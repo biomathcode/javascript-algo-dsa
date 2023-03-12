@@ -1,6 +1,8 @@
 // Task 1: Write a function, times10, that takes an argument, n, and multiples n times 10
 // a simple multiplication fn
-const times10 = () => {};
+const times10 = (n) => {
+  return n * 10;
+};
 
 console.log("~~~~~~~~~~~~~~TASK 1~~~~~~~~~~~~~~");
 console.log("times10 returns:", times10(9));
@@ -11,4 +13,15 @@ console.log("times10 returns:", times10(9));
 
 const cache = {};
 
-const memoTimes10 = (n) => {};
+const memoTimes10 = (n) => {
+  if (n in cache) {
+    return cache[n];
+  } else {
+    let results = times10(n);
+    cache[n] = results;
+    return results;
+  }
+};
+
+console.log("times10 returns:", memoTimes10(9));
+console.log("times10 returns:", memoTimes10(9));
